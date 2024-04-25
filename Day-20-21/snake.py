@@ -18,6 +18,8 @@ class Snake:
             new_segment.penup()
             new_segment.color("White")
             new_segment.pencolor("White")
+            new_segment.speed('fastest')
+
             if i == 0:
                 new_segment.shape("arrow")
             new_segment.shape('square')
