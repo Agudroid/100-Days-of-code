@@ -1,5 +1,5 @@
 import pandas as pd
-
+from art import logo
 
 def initialize_nato_dict():
     nato_data = pd.read_csv('nato_phonetic_alphabet.csv')
@@ -11,9 +11,19 @@ def initialize_nato_dict():
     return nato_dict
 
 
-# TODO 2. Create a list of the phonetic code words from a word that the user inputs.
+def convert_word():
+    try:
+        word = input('Enter a word (Type 0 to close): ').upper()
+        nato_list = [nato[letter] for letter in word]
+    except KeyError:
+        print('Sorry, only letters in the english alphabet')
+        convert_word()
+    else:
+        print(nato_list)
+
+
 if __name__ == '__main__':
+    print(logo)
     nato = initialize_nato_dict()
-    word = input('Enter a word: ').upper()
-    nato_list = [nato[letter] for letter in word]
-    print(nato_list)
+    convert_word()
+
