@@ -47,7 +47,7 @@ while is_game_on:
     if ball.ycor() > 280 or ball.ycor() < -280:
         ball.bounce()
 
-    if player_paddle.distance(ball) <= 30 or computer_paddle.distance(ball) <= 30:
+    if player_paddle.distance(ball) <= 20 or computer_paddle.distance(ball) <= 20:
         print("Inside")
         ball.retrieve()
 
