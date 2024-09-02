@@ -6,7 +6,7 @@ import datetime as dt
 #
 # connection = smtplib.SMTP(OUTLOOK_CONNECTION)
 # connection.starttls()
-# connection.login(user=EMAIL_ACCOUNT, password="iatz yfix uljd emem")
+# connection.login(user=EMAIL_ACCOUNT, password="")
 # connection.sendmail(from_addr=EMAIL_ACCOUNT,
 #                     to_addrs="agudo.antonio@outlook.com",
 #                     msg="Subject:Happy Birthday\n\n"
